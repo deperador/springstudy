@@ -1,9 +1,9 @@
 package com.azxx.demon;
 
-import com.azxx.project.SpringTestBase;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 
 public class TestDITest extends SpringTestBase {
@@ -13,12 +13,17 @@ public class TestDITest extends SpringTestBase {
 
     @Test
     public void TestAdd(){
-        TestDI test = new TestDI();
-        Assert.assertEquals(4,test.add(1,2));
+        Assert.assertEquals(4,testDI.add(1,2));
     }
 
     @Test
     public void TestAdd2(){
         Assert.assertEquals(3,testDI.add(1,2));
+    }
+
+    @Test
+    public void testMethod(){
+        System.out.println("");
+        testDI.testMethod();
     }
 }

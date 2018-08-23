@@ -10,4 +10,8 @@
 
     <!--开启注解-->
     <context:component-scan base-package="com.azxx"/>
+
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath*:/appConfig.properties" />
+    <context:property-placeholder location="classpath*:/db.properties" />
 </beans>
