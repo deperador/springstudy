@@ -9,8 +9,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestDI {
 
-    //注入配置中的值
-    @Value("${jdbc.driver}")
+    /**
+     * 注入配置中的值
+     */
+    @Value("${jdbc.url}")
     private String testproperteis;
 
     private static final Logger logger = LogManager.getLogger(TestDI.class);
@@ -27,4 +29,11 @@ public class TestDI {
         System.out.println(this.testproperteis);
     }
 
+    public String getTestproperteis() {
+        return testproperteis;
+    }
+
+    public void setTestproperteis(String testproperteis) {
+        this.testproperteis = testproperteis;
+    }
 }

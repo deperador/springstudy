@@ -11,7 +11,7 @@ public class ControllerTest {
 
     @GetMapping("/hello")
     public String handle(Model model) {
-        model.addAttribute("message", "Hello World!");
+        model.addAttribute("message", "Spring Mvc");
         return "index";
     }
 }

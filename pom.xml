@@ -20,11 +20,13 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.9</maven.compiler.source>
-    <maven.compiler.target>1.9</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <project.version>1.0-SNAPSHOT</project.version>
     <spring.version>5.0.8.RELEASE</spring.version>
     <log4j.version>2.11.1</log4j.version>
+    <jstl.version>1.2</jstl.version>
+    <taglib.version>1.2.5</taglib.version>
   </properties>
 
 </project>
