@@ -12,7 +12,7 @@ public class TestDI {
     /**
      * 注入配置中的值
      */
-    @Value("${jdbc.url}")
+    @Value("${appName}")
     private String testproperteis;
 
     private static final Logger logger = LogManager.getLogger(TestDI.class);

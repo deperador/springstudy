@@ -12,9 +12,10 @@
   <modules>
     <module>common</module>
     <module>system</module>
+    <module>db</module>
   </modules>
 
-  <name>webdemon</name>
+  <name>srpingstudy</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
