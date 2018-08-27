@@ -1,4 +1,4 @@
-package com.azxx.demon;
+package com.azxx.demon.jdbc;
 
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * 将所需加载的xml文件指定为locations的value。如：@ContextConfiguration(locations = { "classpath:Application-Redis.xml" })
  */
-@ContextConfiguration(locations = {"classpath:applicationContext.xml"})
+@ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 public class SpringTestBase extends AbstractJUnit4SpringContextTests {
 }

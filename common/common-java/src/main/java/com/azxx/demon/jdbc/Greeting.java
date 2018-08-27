@@ -1,4 +1,4 @@
-package com.azxx.demon;
+package com.azxx.demon.jdbc;
 
 public class Greeting {
 
