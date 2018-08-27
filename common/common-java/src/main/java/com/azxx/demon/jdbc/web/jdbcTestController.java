@@ -26,4 +26,12 @@ public class jdbcTestController {
         userService.insert(user);
         return "插入成功！";
     }
+
+    @GetMapping("insert")
+    public String testUpdate(@RequestParam String name,@RequestParam(required = true) int id){
+        logger.info("enter the insert method!");
+        User user = new User(name,id);
+        userService.insert(user);
+        return "更新成功！";
+    }
 }

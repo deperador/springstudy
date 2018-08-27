@@ -11,7 +11,11 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
-    public void insert(User user){
+    public void insert(User user) {
         userDao.insert(user);
+    }
+
+    public void update(User user) {
+        userDao.update(user);
     }
 }

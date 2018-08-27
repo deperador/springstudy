@@ -36,6 +36,11 @@ public class User {
         this.age = age;
     }
 
+    public User(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public User() {
     }
 
