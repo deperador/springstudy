@@ -3,7 +3,7 @@ package com.azxx.demon.jdbc.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user_info", schema = "test", catalog = "")
+@Table(name = "user_info", schema = "test")
 public class UserInfoEntity {
     private int id;
     private String name;
