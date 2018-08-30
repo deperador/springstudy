@@ -56,9 +56,10 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan" value="com.azxx.demon.jdbc.entity"/>
         <property name="hibernateProperties">
-            <value>
-                hibernate.dialect=org.hibernate.dialect.HSQLDialect
-            </value>
+            <props>
+                <prop key="show_sql">true</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
+            </props>
         </property>
     </bean>
 
