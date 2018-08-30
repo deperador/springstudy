@@ -1,4 +1,4 @@
-package com.azxx.demon.jdbc.dao;
+package com.azxx.demon.jdbc.dao.jdbc;
 
 import com.azxx.demon.jdbc.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +32,11 @@ public class UserDao {
         logger.info("---------------------->"+result+"");
     }
 
-    public void update(User user){
-        String sql = "update user_info set name = ? where id = ?";
-        this.jdbcTemplate.update(sql,user.getName(), user.getId());
+    public void update(User user) throws Exception {
+        if(true)
+            throw new Exception("abc");
+        String sql = "update user_info set age = ? where name = ?";
+        this.jdbcTemplate.update(sql,user.getAge(), user.getName());
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.azxx.demon.jdbc.web;
+package com.azxx.demon.jdbc.web.jdbc;
 
 import com.azxx.demon.jdbc.entity.User;
 import com.azxx.demon.jdbc.service.UserService;
@@ -12,9 +12,9 @@ import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("jdbctest")
-public class jdbcTestController {
+public class JdbcTestController {
 
-    private static Logger logger = Logger.getLogger(jdbcTestController.class.getName());
+    private static Logger logger = Logger.getLogger(JdbcTestController.class.getName());
 
     @Autowired
     private UserService userService;
@@ -27,11 +27,20 @@ public class jdbcTestController {
         return "插入成功！";
     }
 
-    @GetMapping("insert")
+    @GetMapping("testUpdate")
     public String testUpdate(@RequestParam String name,@RequestParam(required = true) int id){
         logger.info("enter the insert method!");
         User user = new User(name,id);
         userService.insert(user);
         return "更新成功！";
+    }
+    @GetMapping("testTxManager")
+    public String testTxManager(){
+        try {
+            userService.testTxManager();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "方法结束";
     }
 }
