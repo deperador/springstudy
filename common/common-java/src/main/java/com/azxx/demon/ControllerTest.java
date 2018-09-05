@@ -1,4 +1,4 @@
-package com.azxx.demon.jdbc;
+package com.azxx.demon;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

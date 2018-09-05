@@ -10,7 +10,7 @@
        default-lazy-init="false" default-autowire="byName">
 
     <!--加载配置文件-->
-    <context:property-placeholder location="classpath*:/hibernate/hibernate.properties" ignore-unresolvable="true"/>
+    <!--<context:property-placeholder location="classpath*:/hibernate/hibernate.properties" ignore-unresolvable="true"/>-->
 
     <!--<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">-->
         <!--<property name="driverClassName" value="${jdbc.driverClassName}"/>-->
@@ -54,7 +54,7 @@
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan" value="com.azxx.demon.jdbc.entity"/>
+        <property name="packagesToScan" value="com.azxx.demon.entity"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="show_sql">true</prop>

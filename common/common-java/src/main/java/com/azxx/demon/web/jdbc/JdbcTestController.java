@@ -1,7 +1,7 @@
-package com.azxx.demon.jdbc.web.jdbc;
+package com.azxx.demon.web.jdbc;
 
-import com.azxx.demon.jdbc.entity.User;
-import com.azxx.demon.jdbc.service.UserService;
+import com.azxx.demon.entity.User;
+import com.azxx.demon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

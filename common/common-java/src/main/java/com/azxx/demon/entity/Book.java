@@ -1,11 +1,24 @@
-package com.azxx.demon.jdbc.entity;
+package com.azxx.demon.entity;
 
-public class Books {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.util.Date;
+
+@Entity
+public class Book {
+
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   private String title;
   private Double price;
-  private java.sql.Timestamp publishdate;
+  private Date publishdate;
 
+  @javax.persistence.Id
   public Long getId() {
     return id;
   }
@@ -30,11 +43,11 @@ public class Books {
     this.price = price;
   }
 
-  public java.sql.Timestamp getPublishdate() {
+  public Date getPublishdate() {
     return publishdate;
   }
 
-  public void setPublishdate(java.sql.Timestamp publishdate) {
+  public void setPublishdate(Date publishdate) {
     this.publishdate = publishdate;
   }
 }

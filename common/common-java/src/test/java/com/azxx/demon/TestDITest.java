@@ -1,4 +1,4 @@
-package com.azxx.demon.jdbc;
+package com.azxx.demon;
 
 import org.junit.Assert;
 import org.junit.Test;

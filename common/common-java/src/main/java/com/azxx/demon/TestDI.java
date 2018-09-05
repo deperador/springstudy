@@ -1,4 +1,4 @@
-package com.azxx.demon.jdbc;
+package com.azxx.demon;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

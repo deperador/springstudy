@@ -1,4 +1,4 @@
-package com.azxx.demon.jdbc.entity;
+package com.azxx.demon.entity;
 
 public class User {
 

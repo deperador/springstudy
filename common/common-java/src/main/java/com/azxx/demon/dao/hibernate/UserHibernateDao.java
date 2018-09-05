@@ -1,6 +1,6 @@
-package com.azxx.demon.jdbc.dao.hibernate;
+package com.azxx.demon.dao.hibernate;
 
-import com.azxx.demon.jdbc.entity.UserInfoEntity;
+import com.azxx.demon.entity.UserInfoEntity;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

@@ -1,9 +1,9 @@
-package com.azxx.demon.jdbc.service;
+package com.azxx.demon.service;
 
-import com.azxx.demon.jdbc.dao.hibernate.UserHibernateDao;
-import com.azxx.demon.jdbc.dao.jdbc.UserDao;
-import com.azxx.demon.jdbc.entity.User;
-import com.azxx.demon.jdbc.entity.UserInfoEntity;
+import com.azxx.demon.dao.hibernate.UserHibernateDao;
+import com.azxx.demon.dao.jdbc.UserDao;
+import com.azxx.demon.entity.User;
+import com.azxx.demon.entity.UserInfoEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
