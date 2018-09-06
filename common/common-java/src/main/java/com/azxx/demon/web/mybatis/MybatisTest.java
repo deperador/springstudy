@@ -23,4 +23,8 @@ public class MybatisTest {
         Gson gson = new Gson();
         return gson.toJson(bookService.getBooks());
     }
+
+    public MybatisTest() {
+        System.out.println("init mybatistest controller!");
+    }
 }

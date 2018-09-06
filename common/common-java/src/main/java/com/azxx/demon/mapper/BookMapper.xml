@@ -4,7 +4,7 @@
 <mapper namespace="com.azxx.demon.dao.mybatis.BookDao">
     <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
     <!--获得所有图书 -->
-    <select id="getAllBooks" resultType="Book">
+    <select id="getAllBooks" resultType="com.azxx.demon.entity.Book">
         select id,title,price,publishDate from books
     </select>
     <!--获得图书对象通过编号 -->
